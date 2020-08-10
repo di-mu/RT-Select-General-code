@@ -7,7 +7,8 @@ RT-Select-General is the system implementation of the radio selection and data p
 ## Setup on Raspberry Pi
 
 1. Install package "libpcap-dev" on Raspberry Pi;
-2. Run "make ondevice" in this directory.
+2. To compile RT-Select-General, run "make ondevice" in this directory;
+3. To compile RT-Balance, run "make" in "rt-balance" directory.
 
 ## Setup on ZigBee devices
 
@@ -17,9 +18,16 @@ RT-Select-General is the system implementation of the radio selection and data p
 4. Run "make TARGET=sky" for TelosB device or "make TARGET=srf06-cc26xx BOARD=srf06/cc26xx" for CC2650 device;
 5. Program the flash memory of the target device with the generated binary (*.hex or *.sky) files.
 
-## Execution
+## Execution of RT-Select-General
 
 ```bash
 # ./init-serial.sh
 # ./mro
+```
+
+## Execution of RT-Balance
+
+```bash
+# ./setup.sh
+# ./run.sh
 ```
